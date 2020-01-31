@@ -12,7 +12,7 @@ export default function WelcomePage() {
           alt="rick"
         />
         <Link to='/characters' >
-          <button>See the Characters</button>
+          <button>See the Characters!</button>
         </Link>
       </header>
     </section>
