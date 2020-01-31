@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing is beneficial over server-side routing because of the almost instantaneous changes to the DOM that can occur. Once a SPA loads the first time, which is slightly slower due to loading all possible routes, it is very snappy and does not require a full page reload or network request.
 
 ## Project Set Up
 

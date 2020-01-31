@@ -1,9 +1,20 @@
 import React from "react";
+import styled from 'styled-components';
+
+const RMHeader = styled.div`
+  margin: 2% auto;
+  text-align: center;
+  width: 80%;
+  background-color: #e4a788;
+  padding: 2% 0;
+  border-radius: 5px;
+`
+
 
 export default function Header() {
   return (
-    <header className="ui centered">
-      <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
-    </header>
+    <RMHeader>
+      <h1>Rick &amp; Morty Fan Page</h1>
+    </RMHeader>
   );
 }

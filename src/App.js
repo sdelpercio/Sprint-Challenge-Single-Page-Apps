@@ -5,6 +5,15 @@ import Header from "./components/Header.js";
 import WelcomePage from './components/WelcomePage';
 import CharacterList from './components/CharacterList';
 import SearchForm from './components/SearchForm';
+import styled from 'styled-components';
+
+const AppWrapper = styled.div`
+  background-color: #44281d,
+  min-height:	100vh,
+  width: 100%,
+  display: flex;
+  flex-direction: column;
+`;
 
 
 export default function App() {
@@ -32,7 +41,7 @@ export default function App() {
   }
 
   return (
-    <main>
+    <AppWrapper>
       <Header />
       <Route exact path='/'>
         <WelcomePage />
@@ -41,6 +50,6 @@ export default function App() {
         <SearchForm handleChange={handleChange} input={input} />
         <CharacterList characterData={characterData} />
       </Route>
-    </main>
+    </AppWrapper>
   );
 }
